@@ -173,6 +173,7 @@ formats.
 
 Available languages:
 
+- `ca-ES` (Catalan)
 - `cs-CZ` (Standard Czech)
 - `da-DK` (Standard Danish)
 - `de-DE` (Standard German)

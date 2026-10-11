@@ -5,6 +5,7 @@ import config from "@/config";
 
 // TODO: This should be possible to do with https://github.com/intlify/bundle-tools/tree/main/packages/unplugin-vue-i18n,
 // but that breaks at runtime - may only work with vue-i18n@9?
+import ca_ES from "@/locales/ca-ES.json";
 import cs_CZ from "@/locales/cs-CZ.json";
 import da_DK from "@/locales/da-DK.json";
 import de_DE from "@/locales/de-DE.json";
@@ -18,6 +19,7 @@ import tr_TR from "@/locales/tr-TR.json";
 Vue.use(VueI18n);
 
 const messages = {
+  "ca-ES": ca_ES,
   "cs-CZ": cs_CZ,
   "da-DK": da_DK,
   "de-DE": de_DE,

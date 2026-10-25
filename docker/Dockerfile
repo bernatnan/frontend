@@ -1,11 +1,11 @@
-FROM node:20 as build
+FROM node:24.22.1-alpine AS build
 WORKDIR /usr/src/app
 COPY package.json package-lock.json ./
-RUN npm install
+RUN npm ci
 COPY . ./
 RUN npm run build
 
-FROM nginx:1.27-alpine
+FROM nginx:1.30-alpine
 LABEL version="2.15.3"
 LABEL description="OwnTracks Frontend"
 LABEL maintainer="Linus Groh <mail@linusgroh.de>"
